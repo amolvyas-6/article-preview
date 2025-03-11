@@ -40,33 +40,34 @@
           <p>
             28 Jun 2020
           </p>
+
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill btn-light" viewBox="0 0 16 16" id="shareBtn">
+        <div class="share-div-desktop hidden" >
+          <ul class="share-ul">
+            <li>SHARE</li>
+            <li><a href="/"><img src="./images/icon-facebook.svg" alt="facebook icon"></a></li>
+            <li><a href="/"><img src="./images/icon-twitter.svg" alt="twitter icon"></a></li>
+            <li><a href="/"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a></li>
+          </ul>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill btn-light" id="shareBtn" viewBox="0 0 16 16">
           <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
         </svg>
       </div>
+      <div class="share-div-mobile hidden">
+          <ul class="share-ul">
+            <li>SHARE</li>
+            <li><a href="/"><img src="./images/icon-facebook.svg" alt="facebook icon"></a></li>
+            <li><a href="/"><img src="./images/icon-twitter.svg" alt="twitter icon"></a></li>
+            <li><a href="/"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a></li>
+          </ul>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill btn-dark" id="shareBtnMobile" viewBox="0 0 16 16">
+            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+          </svg>
+        </div>
     </main>
-  </div>
-
-  <div class="share-div-desktop hidden" >
-    <ul class="share-ul">
-      <li>SHARE</li>
-      <li><a href="/"><img src="./images/icon-facebook.svg" alt="facebook icon"></a></li>
-      <li><a href="/"><img src="./images/icon-twitter.svg" alt="twitter icon"></a></li>
-      <li><a href="/"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a></li>
-    </ul>
-  </div>
-
-  <div class="share-div-mobile hidden">
-    <ul class="share-ul">
-      <li>SHARE</li>
-      <li><a href="/"><img src="./images/icon-facebook.svg" alt="facebook icon"></a></li>
-      <li><a href="/"><img src="./images/icon-twitter.svg" alt="twitter icon"></a></li>
-      <li><a href="/"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a></li>
-    </ul>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill btn-dark" viewBox="0 0 16 16" id="shareBtn">
-      <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
-    </svg>
   </div>
 
   <script src="app.js"></script>

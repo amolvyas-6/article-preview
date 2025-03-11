@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope', serif;
@@ -13,19 +17,13 @@ body {
     margin: 0;
 }
 
-.hidden {
-    visibility: hidden;
-    max-height: 0;
-    /* display: none; */
-}
-
-#shareBtn:hover{
+#shareBtn:hover, #shareBtnMobile:hover{
     cursor: pointer;
 }
 
 
 .card {
-    width: 90%;
+    width: 90vw;
     background-color: white;
     border-radius: 1rem;
     display: flex;
@@ -44,6 +42,7 @@ body {
 main{
     width: 80%;
     height: 60%;
+    position: relative;
 }
 
 h1, h2 {
@@ -69,6 +68,7 @@ h2, .author p{
     display: flex;
     justify-content: flex-start;
     margin-bottom: 2rem;
+    position: relative;
     align-items: center;
 }
 
@@ -98,6 +98,41 @@ main > p {
     border-radius: 20%;
     margin-left: 1rem;
 }
+
+.share-div-mobile {
+    position: absolute;
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem;
+    width: 90vw;
+    height: 30%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    top: 69%;
+    left: -12.5%;
+
+
+}
+
+.share-div-mobile > .share-ul {
+    list-style: None;
+    display: flex;
+    padding: 0rem;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.share-div-mobile > .share-ul:first-child{
+    letter-spacing: 0.5rem;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
 
 @media(min-width: 784px){
     .card {
@@ -143,14 +178,13 @@ main > p {
 
     .share-ul li:nth-of-type(1){
         letter-spacing: 0.25rem;
-        /* font-size: 1.25rem; */
         margin-right: 0.5rem;
     }
 
     .share-div-desktop{
-        position: relative;
-        bottom: 11rem;
-        left: 17rem;
+        position: absolute;
+        bottom: 3rem;
+        left:  12rem;
     }
 
     .share-div-desktop::after{
